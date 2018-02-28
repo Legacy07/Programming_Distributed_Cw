@@ -57,12 +57,6 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lineDataset = new Coursework.LineDataset();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -73,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lineDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineDataset)).BeginInit();
-            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -242,6 +235,7 @@
             this.stationGridView.Location = new System.Drawing.Point(9, 25);
             this.stationGridView.Margin = new System.Windows.Forms.Padding(4);
             this.stationGridView.Name = "stationGridView";
+            this.stationGridView.ReadOnly = true;
             this.stationGridView.Size = new System.Drawing.Size(323, 185);
             this.stationGridView.TabIndex = 0;
             this.stationGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.stationGridView_RowHeaderMouseClick);
@@ -258,6 +252,7 @@
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // stationBindingSource
             // 
@@ -325,6 +320,7 @@
             this.lineDataGridView.Location = new System.Drawing.Point(8, 25);
             this.lineDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.lineDataGridView.Name = "lineDataGridView";
+            this.lineDataGridView.ReadOnly = true;
             this.lineDataGridView.Size = new System.Drawing.Size(323, 185);
             this.lineDataGridView.TabIndex = 0;
             this.lineDataGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.lineDataGridView_RowHeaderMouseClick);
@@ -341,6 +337,7 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
             this.dataGridViewTextBoxColumn2.HeaderText = "Name";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // lineBindingSource
             // 
@@ -352,84 +349,11 @@
             this.lineDataset.DataSetName = "LineDataset";
             this.lineDataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Controls.Add(this.comboBox2);
-            this.groupBox5.Controls.Add(this.comboBox1);
-            this.groupBox5.Controls.Add(this.label4);
-            this.groupBox5.Controls.Add(this.button1);
-            this.groupBox5.Location = new System.Drawing.Point(742, 15);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(355, 156);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Link Train Station to a Train Line";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 29);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Select a Train Station";
-            // 
-            // button1
-            // 
-            this.button1.AutoSize = true;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Location = new System.Drawing.Point(182, 96);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 27);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Link Train Station";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataSource = this.stationBindingSource;
-            this.comboBox1.DisplayMember = "Name";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(11, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.ValueMember = "Name";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataSource = this.lineBindingSource;
-            this.comboBox2.DisplayMember = "Name";
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(11, 99);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 6;
-            this.comboBox2.ValueMember = "Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 76);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 17);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Select a Train Line";
-            // 
             // AddLineandStation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 495);
-            this.Controls.Add(this.groupBox5);
+            this.ClientSize = new System.Drawing.Size(756, 488);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -453,8 +377,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lineDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineDataset)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -489,11 +411,5 @@
         private System.Windows.Forms.TextBox updateStationTextBox;
         private System.Windows.Forms.Button deleteStationButton;
         private System.Windows.Forms.Button deleteLineButton;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
     }
 }

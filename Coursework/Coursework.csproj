@@ -77,11 +77,70 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet7.cs">
+      <DependentUpon>DatabaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DbHandler.cs" />
+    <Compile Include="distanceDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>distanceDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="line2Dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>line2Dataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LineDataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LineDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="lineDataset1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lineDataset1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LinkTrainStationtoaLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkTrainStationtoaLine.Designer.cs">
+      <DependentUpon>LinkTrainStationtoaLine.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -97,11 +156,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShortestRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShortestRoute.Designer.cs">
+      <DependentUpon>ShortestRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="station2Dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>station2Dataset.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddDistance.resx">
       <DependentUpon>AddDistance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddLineandStation.resx">
       <DependentUpon>AddLineandStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkTrainStationtoaLine.resx">
+      <DependentUpon>LinkTrainStationtoaLine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -118,6 +191,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShortestRoute.resx">
+      <DependentUpon>ShortestRoute.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
@@ -128,6 +204,105 @@
     </None>
     <None Include="DatabaseDataSet.xss">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet1.xsc">
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet1.xss">
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet2.xsc">
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet2.xss">
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet3.xsc">
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet3.xss">
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet4.xsc">
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet4.xss">
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet5.xsc">
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet5.xss">
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet6.xsc">
+      <DependentUpon>DatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet6.xss">
+      <DependentUpon>DatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet7.xsc">
+      <DependentUpon>DatabaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet7.xss">
+      <DependentUpon>DatabaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="distanceDataset.xsc">
+      <DependentUpon>distanceDataset.xsd</DependentUpon>
+    </None>
+    <None Include="distanceDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>distanceDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="distanceDataset.xss">
+      <DependentUpon>distanceDataset.xsd</DependentUpon>
+    </None>
+    <None Include="line2Dataset.xsc">
+      <DependentUpon>line2Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="line2Dataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>line2Dataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="line2Dataset.xss">
+      <DependentUpon>line2Dataset.xsd</DependentUpon>
     </None>
     <None Include="LineDataset.xsc">
       <DependentUpon>LineDataset.xsd</DependentUpon>
@@ -140,6 +315,17 @@
     <None Include="LineDataset.xss">
       <DependentUpon>LineDataset.xsd</DependentUpon>
     </None>
+    <None Include="lineDataset1.xsc">
+      <DependentUpon>lineDataset1.xsd</DependentUpon>
+    </None>
+    <None Include="lineDataset1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lineDataset1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lineDataset1.xss">
+      <DependentUpon>lineDataset1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -149,6 +335,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="station2Dataset.xsc">
+      <DependentUpon>station2Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="station2Dataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>station2Dataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="station2Dataset.xss">
+      <DependentUpon>station2Dataset.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

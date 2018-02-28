@@ -144,7 +144,7 @@ namespace Coursework
             //if the train station exists in the database then output a message
             if (dataReader.HasRows)
             {
-                outputLabel.Text = "Train line already exists";
+                outputLabel.Text = "Train station already exists";
 
             }
 
@@ -171,9 +171,9 @@ namespace Coursework
         {
             // TODO: This line of code loads data into the 'lineDataset.Line' table. You can move, or remove it, as needed.
             this.lineDataAdapter.Fill(this.lineDataset.Line);
-            // TODO: This line of code loads data into the 'databaseDataSet.Station' table. You can move, or remove it, as needed.
+            // TODO: This line of code loads data into the 'stationDataSet.Station' table. You can move, or remove it, as needed.
             this.stationDataAdapter.Fill(this.stationDataSet.Station);
-
+        
         }
         //check it out for adding and updating 
         // https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/how-to-bind-data-to-the-windows-forms-datagridview-control

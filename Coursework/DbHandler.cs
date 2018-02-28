@@ -15,16 +15,18 @@ namespace Coursework
         {
             //connection path
             string connString;
-            connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\Greenwich Part 3 Computer Science\Term 2\Programming Distributed Components\Coursework\Coursework\Coursework\Database.mdf;Integrated Security=True;";
+            connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=L:\Greenwich Part 3 Computer Science\Term 2\Programming Distributed Components\Coursework\Coursework\Database.mdf;Integrated Security=True;";
             return new SqlConnection(connString);
         }
 
-        public static void SaveAdmin(string username, string password)
+        public static void AddAdmin(string username, string password)
         {
             SqlConnection connString = GetConnection();
             //to add data in admin table in the database
-            string myQuery = "INSERT INTO Admin( Username,  Password) VALUES ( '" + username + "' , '" + password + "')";
+            string myQuery = "INSERT INTO Admin(Username, Password) VALUES (@username, @password)";
             SqlCommand myCommand = new SqlCommand(myQuery, connString);
+            myCommand.Parameters.AddWithValue("@username", username);
+            myCommand.Parameters.AddWithValue("@password", password);
 
             try
             {
@@ -94,6 +96,30 @@ namespace Coursework
             myCommand.Parameters.AddWithValue("@line1", line1);
             myCommand.Parameters.AddWithValue("@line2", line2);
             myCommand.Parameters.AddWithValue("@distance", distance);
+
+            try
+            {
+                connString.Open();
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception in DBHandler", ex);
+            }
+            finally
+            {
+                connString.Close();
+            }
+        }
+
+        public static void DeleteDistance(int id)
+        {
+            SqlConnection connString = GetConnection();
+            //delete id in station table 
+            string myQuery = "Delete Distance where ID=@id";
+            SqlCommand myCommand = new SqlCommand(myQuery, connString);
+            //using parameters to avoid sql injection
+            myCommand.Parameters.AddWithValue("@id", id);
 
             try
             {
@@ -207,7 +233,7 @@ namespace Coursework
             }
         }
 
-        public static void StationsLineLink(string station, string line)
+        public static void AddLinkedStations(string station, string line)
         {
             SqlConnection connString = GetConnection();
             //to add data in station to a line table in the database
@@ -230,6 +256,30 @@ namespace Coursework
                 connString.Close();
             }
         }
+        public static void DeleteStationLink(int id)
+        {
+            SqlConnection connString = GetConnection();
+            //delete id in station table 
+            string myQuery = "Delete StationsLineLink where ID=@id";
+            SqlCommand myCommand = new SqlCommand(myQuery, connString);
+            //using parameters to avoid sql injection
+            myCommand.Parameters.AddWithValue("@id", id);
+
+            try
+            {
+                connString.Open();
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception in DBHandler", ex);
+            }
+            finally
+            {
+                connString.Close();
+            }
+        }
+
 
     }
 }

@@ -28,5 +28,17 @@ namespace Coursework
             AddDistance addDistance = new AddDistance();
             addDistance.Show();
         }
+
+        private void linkButton_Click(object sender, EventArgs e)
+        {
+            LinkTrainStationtoaLine link = new LinkTrainStationtoaLine();
+            link.Show();
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            ShortestRoute shortestRoute = new ShortestRoute();
+            shortestRoute.Show();
+        }
     }
 }
